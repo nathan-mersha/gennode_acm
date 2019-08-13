@@ -1,0 +1,23 @@
+{
+  "name": "gennode_acm",
+  "version": "0.0.1",
+  "description": "On new object creation, registers assigns data ownership for read,update and delete operations",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nathan-mersha/gennode_acm.git"
+  },
+  "keywords": [
+    "gennode",
+    "acm"
+  ],
+  "author": "Nathan Mersha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathan-mersha/gennode_acm/issues"
+  },
+  "homepage": "https://github.com/nathan-mersha/gennode_acm#readme"
+}
