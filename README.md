@@ -39,7 +39,7 @@ let gennodeACMInstance = new gennodeACM({
 
 ```javascript
 let schema = new Schema(
-    // Your Schema goes here
+    // todo : Your Schema goes here
 );
 
 ```
@@ -49,6 +49,7 @@ let schema = new Schema(
 ```javascript
 schema.post('save', function(doc) {
     let objectACM = {
+        schemaName : "schema", // Defines the schema/model name
         object : doc._id, // Defines the object id ( or anything you consider unique )
         accessControl : { // Defines the default access roles on your data
             read : ["any"],

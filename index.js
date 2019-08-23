@@ -105,6 +105,8 @@ class GennodeACM {
             throw new Error("Object acm must contain key object")
         }else if(!objectACMKeys.includes("accessControl")){
             throw new Error("Object acm must contain key accessControl");
+        } else if(!objectACMKeys.includes("schemaName")){
+            throw new Error("Object acm must contain key schemaName");
         }
 
         let constructedEndpoint = `http://${this.mergedConfig.host}${this.mergedConfig.port ? `:${this.mergedConfig.port}` : ""}${this.mergedConfig.endpoint}?createBy=object`;
