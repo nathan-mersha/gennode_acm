@@ -49,7 +49,8 @@ let schema = new Schema(
 ```javascript
 schema.post('save', function(doc) {
     let objectACM = {
-        schemaName : "schema", // Defines the schema/model name
+        schemaName : "schemaName", // Defines the schema/model name
+        serviceName : "serviceName", // Defines the service name where the schema is located
         object : doc._id, // Defines the object id ( or anything you consider unique )
         accessControl : { // Defines the default access roles on your data
             read : ["any"],
